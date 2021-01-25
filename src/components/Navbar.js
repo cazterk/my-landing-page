@@ -9,6 +9,9 @@ function Navbar() {
 
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("open");
+      links.forEach((link) => {
+        link.classList.toggle("fade");
+      });
     });
   };
 
