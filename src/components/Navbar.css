@@ -1,6 +1,39 @@
+:root {
+  --first-color: #ff304f;
+  --second-color: #fcefee;
+  --purple: #2d314d;
+  --bg-dark: #000000;
+  --white: white;
+  --light-red: #ff6b6b;
+}
 nav {
-  height: 10vh;
-  background: #000000;
+  height: 6vh;
+  background: var(--purple);
+  display: flex;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  z-index: 2;
+  margin-left: 0.5rem;
+}
+
+.logo-left {
+  background-color: var(--light-red);
+  padding: 0.5px 5px 0.5px 5px;
+  border-radius: 8px;
+}
+
+.logo-right {
+  padding: 3px 8px 3px 3px;
+  margin-left: -1px;
+  border-radius: 4px;
 }
 
 .nav-links {
@@ -14,21 +47,48 @@ nav {
 }
 
 .nav-links li a {
-  color: white;
+  position: relative;
+  color: var(--white);
   text-decoration: none;
   font-size: 16px;
+  transition: color 300ms ease-in-out;
+}
+.nav-links li a:hover {
+  color: var(--bg-dark);
+}
+
+.nav-links li a::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: -29px;
+  display: block;
+  background: var(--light-red);
+  transition: opacity 300ms ease-in-out;
+}
+
+.nav-links li a:hover:before {
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
-  .line {
+  .line-1,
+  .line-2,
+  .line-3 {
     width: 30px;
     height: 3px;
-    background: white;
+    background: var(--white);
     margin: 5px;
+    transition: all 300ms ease-in-out;
+    transform-origin: 3px 1px;
   }
 
   nav {
     position: relative;
+    display: flex;
   }
 
   .hamburger {
@@ -42,7 +102,7 @@ nav {
 
   .nav-links {
     position: fixed;
-    background: #000000;
+    background: var(--first-color);
     height: 100vh;
     width: 100%;
     flex-direction: column;
@@ -55,6 +115,18 @@ nav {
     clip-path: circle(1500px at 90% -10%);
     -webkit-clip-path: circle(1500px at 90% -10%);
     pointer-events: all;
+  }
+
+  .hamburger.open .line-1 {
+    transform: rotate(45deg);
+  }
+
+  .hamburger.open .line-2 {
+    opacity: 0;
+  }
+
+  .hamburger.open .line-3 {
+    transform: rotate(-45deg);
   }
 
   .nav-links li {
