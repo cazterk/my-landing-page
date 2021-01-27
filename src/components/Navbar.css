@@ -1,5 +1,6 @@
 :root {
   --first-color: #ff304f;
+  --second-red: #aa3333;
   --second-color: #fcefee;
   --purple: #2d314d;
   --bg-dark: #000000;
@@ -8,8 +9,12 @@
 }
 nav {
   height: 6vh;
-  background: var(--purple);
+  background: var(--bg-dark);
   display: flex;
+  box-shadow: rgb(36 36 36) 0px 1px 0px;
+}
+.nav-section {
+  box-shadow: rgb(36 36 36) 0px 1px 0px;
 }
 
 .navbar-logo {
@@ -89,6 +94,7 @@ nav {
   nav {
     position: relative;
     display: flex;
+    z-index: 1;
   }
 
   .hamburger {
@@ -101,19 +107,19 @@ nav {
   }
 
   .nav-links {
-    position: fixed;
+    position: absolute;
     background: var(--first-color);
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
   .nav-links.open {
-    clip-path: circle(1500px at 90% -10%);
-    -webkit-clip-path: circle(1500px at 90% -10%);
+    clip-path: circle(2000px at 90% -20%);
+    -webkit-clip-path: circle(2000px at 90% -20%);
     pointer-events: all;
   }
 
