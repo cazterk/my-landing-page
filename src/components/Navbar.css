@@ -11,6 +11,7 @@ nav {
   height: 6vh;
   background: var(--bg-dark);
   display: flex;
+  z-index: 1;
   box-shadow: rgb(36 36 36) 0px 1px 0px;
 }
 .nav-section {
