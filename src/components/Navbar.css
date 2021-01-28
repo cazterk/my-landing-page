@@ -31,7 +31,7 @@ nav {
 }
 
 .logo-left {
-  background-color: var(--light-red);
+  background-color: var(--first-color);
   padding: 0.5px 5px 0.5px 5px;
   border-radius: 8px;
 }

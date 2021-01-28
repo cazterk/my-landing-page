@@ -4,19 +4,33 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { IoGameControllerSharp } from "react-icons/io5";
 import { FaYoutube } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import Typewriter from "typewriter-effect";
+import { Button } from "./Button";
 
 function Hero() {
   return (
     <>
-      <IconContext.Provider value={{ color: "rgb(153, 153, 153)", size: 40 }}>
+      <IconContext.Provider value={{ size: 40 }}>
         <section className="hero">
           <div class="content">
             <div className="hero-content">
-              <h2 className="title pop-in">Cazterk here! you are welcome</h2>
+              <h2 className="title pop-in">
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter.typeString("Hello! cazterk here").start();
+                  }}
+                />
+              </h2>
               <p className="desc pop-in">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString(
+                        " This is my site developed using react, feel free to look aroundand checkout some goodies and my projects"
+                      )
+                      .start();
+                  }}
+                />
               </p>
               <div className="social-wrapper pop-in">
                 <i id="github">
@@ -31,7 +45,11 @@ function Hero() {
                   <FaYoutube />
                 </i>
               </div>
-              <button className="action pop-in">order now</button>
+              <div className="action pop-in">
+                <Button buttonSize="btn--wide" buttonColor="blue">
+                  get started
+                </Button>
+              </div>
             </div>
           </div>
         </section>
