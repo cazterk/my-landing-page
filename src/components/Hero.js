@@ -18,23 +18,19 @@ function Hero() {
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s
               </p>
-              <ul className="social-wrapper pop-in">
-                <li>
-                  <i id="github">
-                    <AiOutlineGithub />
-                  </i>
-                </li>
-                <li>
-                  <i id="gamedev">
-                    <IoGameControllerSharp />
-                  </i>
-                </li>
-                <li>
-                  <i id="youtube">
-                    <FaYoutube />
-                  </i>
-                </li>
-              </ul>
+              <div className="social-wrapper pop-in">
+                <i id="github">
+                  <AiOutlineGithub />
+                </i>
+
+                <i id="gamedev">
+                  <IoGameControllerSharp />
+                </i>
+
+                <i id="youtube">
+                  <FaYoutube />
+                </i>
+              </div>
               <button className="action pop-in">order now</button>
             </div>
           </div>
