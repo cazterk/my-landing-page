@@ -1,8 +1,9 @@
 .hero {
-  background-color: black;
+  background-color: #111;
   min-height: 700px;
   background-position: center;
   position: relative;
+  z-index: -1;
 }
 
 .content {
@@ -23,7 +24,6 @@
   padding: 20px 0;
   font-size: 2em;
   text-transform: capitalize;
-
   animation-delay: 0.6s;
 }
 
@@ -32,7 +32,6 @@
   max-width: 450px;
   margin: 0 auto;
   line-height: 1.5;
-
   animation-delay: 0.8s;
 }
 

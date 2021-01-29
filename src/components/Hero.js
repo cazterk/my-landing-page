@@ -26,7 +26,7 @@ function Hero() {
                   onInit={(typewriter) => {
                     typewriter
                       .typeString(
-                        " This is my site developed using react, feel free to look aroundand checkout some goodies and my projects"
+                        " This is my site developed using react, feel free to look around, checkout some goodies and my projects"
                       )
                       .start();
                   }}
