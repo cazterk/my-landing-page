@@ -1,29 +1,58 @@
-.container-all {
-  padding-top: 2.25rem;
-  padding-right: 1.5rem;
-  padding-bottom: 2.25rem;
-  padding-left: 1.5rem;
-}
+@import "./Global.css";
 
-.container {
-  max-width: 69.375rem;
-  margin: auto;
-}
 .feature {
 }
 
 .feature-grid {
-  display: flex;
 }
 
 .feature-item {
+  padding: 0.9375rem;
+  flex: 0 0 50%;
   flex: 1;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  margin-bottom: 20px;
+}
+
+.feature-item:hover {
+  transition: all 200ms ease-in;
+  transform: scale(1.05);
+}
+.feature-intro {
+  margin-bottom: 1.875rem;
 }
 
 .feature-icon {
+  margin-bottom: 3.75rem;
 }
 .feature-title {
+  font-weight: 300;
+  line-height: 1.15;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .feature-description {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+@media screen and (min-device-width: 900px) {
+  .feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feature-icon {
+    margin-bottom: 2.75rem;
+  }
+
+  .feature-item {
+    margin-right: 20px;
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 2.125rem;
+  }
 }

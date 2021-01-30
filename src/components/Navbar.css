@@ -1,13 +1,5 @@
-:root {
-  --first-color: #ff304f;
-  --second-red: #aa3333;
-  --second-color: #fcefee;
-  --purple: #2d314d;
-  --bg-dark: #040404;
-  --white: white;
-  --light-red: #ff6b6b;
-  --bg-dark2: #111;
-}
+@import "./Global.css";
+
 nav {
   height: 6vh;
   background: var(--bg-dark2);

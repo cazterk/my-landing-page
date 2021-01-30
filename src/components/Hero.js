@@ -14,13 +14,13 @@ function Hero() {
         <section className="hero">
           <div class="content">
             <div className="hero-content">
-              <h2 className="title pop-in">
+              <h1 className="title pop-in">
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter.typeString("Hello! cazterk here").start();
                   }}
                 />
-              </h2>
+              </h1>
               <p className="desc pop-in">
                 <Typewriter
                   onInit={(typewriter) => {

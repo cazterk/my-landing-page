@@ -1,0 +1,51 @@
+:root {
+  --first-color: #ff304f;
+  --second-red: #aa3333;
+  --second-color: #fcefee;
+  --purple: #2d314d;
+  --bg-dark: #040404;
+  --white: #fff;
+  --light-red: #ff6b6b;
+  --bg-dark2: #111;
+}
+
+.container-all {
+  padding-top: 4.375rem;
+  padding-right: 1.5rem;
+  padding-bottom: 4.375rem;
+  padding-left: 1.5rem;
+}
+
+.container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  font-weight: 300;
+  font-size: 2.31rem;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+}
+
+@media screen and (max-device-width: 900px) {
+  h2 {
+    font-size: 1.875rem;
+    margin-bottom: 1.5625rem;
+  }
+}
