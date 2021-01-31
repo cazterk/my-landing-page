@@ -12,6 +12,7 @@
   flex: 1;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .feature-item:hover {
@@ -20,10 +21,12 @@
 }
 .feature-intro {
   margin-bottom: 1.875rem;
+  text-align: center;
 }
 
 .feature-icon {
   margin-bottom: 3.75rem;
+  justify-content: center;
 }
 .feature-title {
   font-weight: 300;

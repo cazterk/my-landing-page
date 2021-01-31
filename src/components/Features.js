@@ -1,6 +1,6 @@
 import React from "react";
 import "./Features.css";
-import { ImYoutube2 } from "react-icons/im";
+import { SiYoutubetv } from "react-icons/si";
 import { SiUnity } from "react-icons/si";
 import { ImHtmlFive } from "react-icons/im";
 import { IconContext } from "react-icons/lib";
@@ -46,7 +46,7 @@ function Features() {
             <div className="feature-item">
               <div className="feature-icon">
                 <i>
-                  <ImYoutube2 />
+                  <SiYoutubetv />
                 </i>
               </div>
               <div className="feature-title">Youtube</div>
