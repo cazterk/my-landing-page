@@ -6,8 +6,8 @@ function About() {
   return (
     <>
       <div>
-        <section>
-          <div className="about">
+        <section className="about">
+          <div className="container-about">
             <div className="grid">
               <div className="left">
                 <img src="./images/perfil.png" alt="" />

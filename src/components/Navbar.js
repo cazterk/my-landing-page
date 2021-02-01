@@ -32,9 +32,7 @@ function Navbar() {
       <div className="nav-section">
         <nav>
           <Link to="/" className="navbar-logo">
-            {/* < className="navbar-icon" /> */}
-            <span className="logo-left">caz</span>
-            <spam className="logo-right">terk</spam>
+            cazterk
           </Link>
           <div id="btn-hamburger" className="hamburger">
             <div className="line-1"></div>

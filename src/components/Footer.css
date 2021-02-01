@@ -1,0 +1,35 @@
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgb(16, 21, 34);
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section {
+  bottom: 0;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin: 10px auto 10px auto;
+  color: var(--white);
+  justify-content: space-between;
+}
+
+.footer-logo {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  z-index: 2;
+  margin-left: 0.5rem;
+}
+
+#social {
+  margin: 0px 10px 0px 10px;
+}
