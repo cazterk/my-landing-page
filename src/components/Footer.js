@@ -8,13 +8,15 @@ import { IconContext } from "react-icons/lib";
 function Footer() {
   return (
     <>
-      <IconContext.Provider value={{ size: 40, color: "#fff" }}>
+      <IconContext.Provider value={{ size: 30, color: "#fff" }}>
         <footer>
           <div className="footer-section">
             <Link to="/" className="footer-logo">
               cazterk
             </Link>
-            <p className="copyrights">cazterk © 2021 All Rights Reserved.</p>
+            <small className="copyrights">
+              cazterk © 2021 All Rights Reserved.
+            </small>
             <div className="social-media">
               <Link id="social">
                 <AiFillFacebook />

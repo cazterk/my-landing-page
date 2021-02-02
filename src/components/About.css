@@ -1,79 +1,72 @@
 @import "./Global.css";
 
 .about {
-  height: 100vh;
+  background-color: var(--bg-dark);
+  height: 35.75076608784474vh;
   display: flex;
-  align-items: center;
-  background-color: var(--bg-dark2);
-  line-height: 1.5;
-}
-
-.container-about {
-  width: 100%;
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
-  align-items: center;
   justify-content: center;
-}
-
-.left img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-.right > * {
-  margin-bottom: 1.1rem;
-  color: var(--white);
-}
-
-.right h4 {
-  font-weight: 500;
-  background-color: var(--first-color);
-  display: inline-block;
-  padding: 5px 15px;
-  font-size: 1rem;
-  border-radius: 4px;
-}
-
-.right p {
-  text-align: justify;
-}
-
-.btn-about {
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px 25px;
-  border: 2px solid var(--first-color);
-  border-radius: 5px;
+  align-items: center;
   position: relative;
-  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.btn-about::after {
-  content: "";
-  background: var(--first-color);
+.about-header {
+  position: relative;
+}
+
+.about-profile img {
+  width: 96px;
+  height: 96px;
+  border-radius: 1000px;
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0%;
-  z-index: -1;
-  transition: width 0.5s ease;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 6px solid var(--first-color);
 }
 
-.btn-about:hover::after {
-  width: 100%;
+.card .card-body {
+  padding: 18px 48px;
 }
 
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
+.desc {
+  margin: 0 10px 0 10px;
+}
+
+.about-item {
+  margin-right: 20px;
+  text-align: center;
+  padding: 0.9375rem;
+  color: var(--white);
+  position: absolute;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.about-item:hover {
+  transition: all 200ms ease-in;
+  transform: scale(1.05);
+}
+
+.about-description {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .about-item {
+    margin-left: 20px;
+    width: 80%;
+    flex: 0 0 50%;
+    flex: 1;
+  }
+  .about {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about {
+    height: 70vh;
   }
 }
