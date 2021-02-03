@@ -7,6 +7,7 @@ import { IconContext } from "react-icons/lib";
 import Typewriter from "typewriter-effect";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
+import { Link as Scroll } from "react-scroll";
 
 function Hero() {
   return (
@@ -34,26 +35,43 @@ function Hero() {
                 />
               </p>
               <div className="social-wrapper pop-in">
-                <Link to={"https://www.github.com/cazterk"} target="_blank">
+                <Link
+                  to={"//www.github.com/cazterk/"}
+                  target="_blank"
+                  aria-label="Github"
+                >
                   <i id="github">
                     <AiOutlineGithub />
                   </i>
                 </Link>
+                <Link
+                  to={"//www.tinyurl.com/1j61mbdh/"}
+                  target="_blank"
+                  aria-label="Itch"
+                >
+                  <i id="gamedev">
+                    <IoGameControllerSharp />
+                  </i>
+                </Link>
 
-                <i id="gamedev">
-                  <IoGameControllerSharp />
-                </i>
-
-                <i id="youtube">
-                  <FaYoutube />
-                </i>
+                <Link
+                  to={"//www.youtube.com/c/cazterk"}
+                  target="_blank"
+                  aria-label="YouTube"
+                >
+                  <i id="youtube">
+                    <FaYoutube />
+                  </i>
+                </Link>
               </div>
               <div className="action pop-in">
-                <Link>
-                  <Button buttonSize="btn--wide" buttonColor="blue">
-                    get started
-                  </Button>
-                </Link>
+                <Scroll to="features">
+                  <Link>
+                    <Button buttonSize="btn--wide" buttonColor="blue">
+                      get started
+                    </Button>
+                  </Link>
+                </Scroll>
               </div>
             </div>
           </div>

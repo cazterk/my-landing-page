@@ -21,13 +21,28 @@ function Footer() {
               cazterk © 2021 All Rights Reserved.
             </small>
             <div className="social-media">
-              <Link id="social">
+              <Link
+                to={"//www.facebook.com/Cazhd1/"}
+                target="_blank"
+                aria-label="facebook"
+                id="social"
+              >
                 <AiFillFacebook />
               </Link>
-              <Link id="social">
+              <Link
+                to={"//www.instagram.com/cazterk/"}
+                target="_blank"
+                aria-label="instagram"
+                id="social"
+              >
                 <FaInstagramSquare />
               </Link>
-              <Link id="social">
+              <Link
+                to={"//www.twitter.com/cazterk"}
+                target="_blank"
+                aria-label="twitter"
+                id="social"
+              >
                 <AiFillTwitterSquare />
               </Link>
             </div>
