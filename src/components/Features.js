@@ -9,7 +9,7 @@ function Features() {
   return (
     <>
       <IconContext.Provider value={{ size: 50, color: "#ff304f" }}>
-        <div className="features container container-all">
+        <div className="features container container-all" id="features">
           <div className="feature-intro">
             <h2>Projects | hobbies </h2>
             <p></p>

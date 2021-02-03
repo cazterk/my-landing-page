@@ -6,12 +6,13 @@ import { FaYoutube } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import Typewriter from "typewriter-effect";
 import { Button } from "./Button";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
     <>
       <IconContext.Provider value={{ size: 40 }}>
-        <section className="hero">
+        <section className="hero" id="hero">
           <div class="content">
             <div className="hero-content">
               <h1 className="title pop-in">
@@ -46,9 +47,11 @@ function Hero() {
                 </i>
               </div>
               <div className="action pop-in">
-                <Button buttonSize="btn--wide" buttonColor="blue">
-                  get started
-                </Button>
+                <Link>
+                  <Button buttonSize="btn--wide" buttonColor="blue">
+                    get started
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
