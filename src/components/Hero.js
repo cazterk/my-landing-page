@@ -65,7 +65,7 @@ function Hero() {
                 </Link>
               </div>
               <div className="action pop-in">
-                <Scroll to="features">
+                <Scroll to="features" smooth={true} duration={1000}>
                   <Link>
                     <Button buttonSize="btn--wide" buttonColor="blue">
                       get started
