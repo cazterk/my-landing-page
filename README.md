@@ -2,7 +2,7 @@
 
 cazterk
 
-# link=======>(loading........)
+# link
 
 (loading........)
 

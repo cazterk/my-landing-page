@@ -30,9 +30,9 @@ function Navbar() {
   return (
     <>
       <div className="nav-section">
-        <nav>
+        <nav className="nav">
           <Link to="/" className="navbar-logo">
-            cazterk
+            <img src="./images/logo-caz.svg" alt="" />
           </Link>
           <div id="btn-hamburger" className="hamburger">
             <div className="line-1"></div>
@@ -40,14 +40,14 @@ function Navbar() {
             <div className="line-3"></div>
           </div>
           <ul className="nav-links">
-            <li>
-              <a href="#">Projects</a>
+            <li id="nav-left">
+              <Link>Projects</Link>
             </li>
-            <li>
-              <a href="#">Contact</a>
+            <li id="nav-left">
+              <Link>Contact</Link>
             </li>
-            <li>
-              <a href="#">About</a>
+            <li id="nav-left">
+              <Link>About</Link>
             </li>
           </ul>
         </nav>

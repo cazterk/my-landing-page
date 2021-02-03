@@ -12,7 +12,7 @@ function Footer() {
         <footer>
           <div className="footer-section">
             <Link to="/" className="footer-logo">
-              cazterk
+              <img src="./images/logo-caz.svg" alt="" />
             </Link>
             <small className="copyrights">
               cazterk © 2021 All Rights Reserved.
