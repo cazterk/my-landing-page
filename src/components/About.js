@@ -26,7 +26,7 @@ function About() {
           <div className="about-icon"></div>
           <div className="about-header">
             <div className="about-profile">
-              <img className="profile-img" src="./images/profile.jpg" alt="" />
+              <img className="profile-img" src="./images/profile.png" alt="" />
               <br />
               <br />
               <br />
