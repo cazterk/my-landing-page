@@ -24,7 +24,7 @@
 .hero-content .title {
   color: var(--white);
   padding: 20px 0;
-  font-size: 2em;
+  font-size: 3rem;
   text-transform: capitalize;
   animation-delay: 0.6s;
 }
@@ -42,6 +42,10 @@
   padding: 16px 50px;
   text-transform: capitalize;
   animation-delay: 1.2s;
+}
+
+h1 {
+  margin-bottom: 0 !important;
 }
 /*icons*/
 
@@ -91,7 +95,7 @@
   }
 
   .hero-content .title {
-    font-size: 2.2em;
+    font-size: 3rem;
   }
 
   .hero .hero-header .services {

@@ -34,9 +34,11 @@ function Hero() {
                 />
               </p>
               <div className="social-wrapper pop-in">
-                <i id="github">
-                  <AiOutlineGithub />
-                </i>
+                <Link to={"https://www.github.com/cazterk"} target="_blank">
+                  <i id="github">
+                    <AiOutlineGithub />
+                  </i>
+                </Link>
 
                 <i id="gamedev">
                   <IoGameControllerSharp />
