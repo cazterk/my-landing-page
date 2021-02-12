@@ -21,12 +21,8 @@ footer {
 }
 
 .footer-logo {
-  text-decoration: none;
-  color: var(--white);
-  font-size: 30px;
   display: flex;
   align-items: center;
-  cursor: pointer;
   height: 100%;
   z-index: 2;
   margin-left: 0.5rem;
