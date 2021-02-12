@@ -7,6 +7,11 @@ import { IconContext } from "react-icons/lib";
 import { Link as Scroll } from "react-scroll";
 
 function Footer() {
+  const year = React.useMemo(() => {
+    const now = new Date();
+    return now.getFullYear();
+  }, []);
+
   return (
     <>
       <IconContext.Provider value={{ size: 30, color: "#fff" }}>
@@ -14,11 +19,11 @@ function Footer() {
           <div className="footer-section">
             <Scroll Scroll to="navbar" smooth={true} duration={1000}>
               <Link className="footer-logo">
-                <img src="./images/logo-caz.svg" alt="" />
+                <img src="./images/logo-caz.svg" alt="about-logo" />
               </Link>
             </Scroll>
             <small className="copyrights">
-              cazterk © 2021 All Rights Reserved.
+              cazterk © {year} All Rights Reserved.
             </small>
             <div className="social-media">
               <Link
