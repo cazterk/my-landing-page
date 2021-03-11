@@ -10,9 +10,12 @@ function Navbar() {
     <>
       <div className="nav-section" id="navbar">
         <nav className="nav">
-          <Link to="/" className="navbar-logo">
-            <img src="./images/logo-caz.svg" alt="" />
-          </Link>
+          <div className="navbar-logo">
+            <Link to="/">
+              <img src="./images/logo-caz.svg" alt="" />
+            </Link>
+          </div>
+
           <div
             onClick={() => setMenuActive(!menuActive)}
             className={`hamburger ${menuActive && "open"}`}
