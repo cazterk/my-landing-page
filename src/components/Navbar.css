@@ -20,9 +20,6 @@
 }
 
 .navbar-logo {
-  text-decoration: none;
-  color: var(--white);
-  font-size: 30px;
   display: flex;
   align-items: center;
   cursor: pointer;
