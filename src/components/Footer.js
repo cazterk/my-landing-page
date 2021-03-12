@@ -18,9 +18,7 @@ function Footer() {
         <footer>
           <div className="footer-section">
             <Scroll Scroll to="navbar" smooth={true} duration={1000}>
-              <Link className="footer-logo">
-                <img src="./images/logo-caz.svg" alt="about-logo" />
-              </Link>
+              <Link className="footer-logo">cazterk</Link>
             </Scroll>
             <small className="copyrights">
               cazterk © {year} All Rights Reserved.

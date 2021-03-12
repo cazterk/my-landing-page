@@ -10,9 +10,9 @@ function Navbar() {
     <>
       <div className="nav-section" id="navbar">
         <nav className="nav">
-          <div className="navbar-logo">
-            <Link to="/">
-              <img src="./images/logo-caz.svg" alt="" />
+          <div>
+            <Link to="/" className="navbar-logo">
+              cazterk
             </Link>
           </div>
 

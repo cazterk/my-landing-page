@@ -1,15 +1,15 @@
 @import "../Global.css";
-
-.stats-section {
+.stats {
   background-color: var(--bg-dark);
 }
-
-.live-stats {
-  height: 50vh;
-  display: flex;
+.stats-section {
   justify-content: center;
   align-items: center;
   position: relative;
+  display: flex;
+}
+
+.live-stats {
   display: flex;
   flex-wrap: wrap;
 }
@@ -17,6 +17,7 @@
   align-items: center;
   text-align: center;
   color: var(--white);
+  width: 100%;
 }
 
 .live-item {
@@ -74,11 +75,12 @@
   }
 
   .item-desc {
-    padding-right: 3em;
+    width: 30%;
   }
 
   .live-item {
     margin-right: 20px;
+    width: 70vh;
   }
 
   /* .live-title {
