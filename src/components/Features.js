@@ -9,50 +9,52 @@ function Features() {
   return (
     <>
       <IconContext.Provider value={{ size: 50, color: "#ff304f" }}>
-        <div className="features container container-all" id="features">
-          <div className="feature-intro">
-            <h2>Projects | hobbies </h2>
-            <p></p>
-          </div>
+        <div className="feature-section">
+          <div className="features container container-all" id="features">
+            <div className="feature-intro">
+              <h2>Projects | hobbies </h2>
+              <p></p>
+            </div>
 
-          <div className="feature-grid">
-            {/* item 1 */}
-            <div className="feature-item">
-              <div className="feature-icon">
-                <i>
-                  <SiUnity />
-                </i>
+            <div className="feature-grid">
+              {/* item 1 */}
+              <div className="feature-item">
+                <div className="feature-icon">
+                  <i>
+                    <SiUnity />
+                  </i>
+                </div>
+                <div className="feature-title"> Game dev</div>
+                <div className="feature-description">
+                  I like making games when ever I can, using unity and have a
+                  lot to learn in order to be pro{" "}
+                </div>
               </div>
-              <div className="feature-title"> Game dev</div>
-              <div className="feature-description">
-                I like making games when ever I can check out and have a lot to
-                learn in order to be establish{" "}
+              {/* item 2 */}
+              <div className="feature-item">
+                <div className="feature-icon">
+                  <i>
+                    <ImHtmlFive />
+                  </i>
+                </div>
+                <div className="feature-title"> Web dev</div>
+                <div className="feature-description">
+                  This I like as well, reactjs and the like, and this site was
+                  made by me with the help of the internet
+                </div>
               </div>
-            </div>
-            {/* item 2 */}
-            <div className="feature-item">
-              <div className="feature-icon">
-                <i>
-                  <ImHtmlFive />
-                </i>
-              </div>
-              <div className="feature-title"> Web dev</div>
-              <div className="feature-description">
-                This I like as well, reactjs and the like, and this site was
-                made by me plus the help of the internet
-              </div>
-            </div>
-            {/* item 3 */}
-            <div className="feature-item">
-              <div className="feature-icon">
-                <i>
-                  <IoLogoYoutube />
-                </i>
-              </div>
-              <div className="feature-title">Youtube</div>
-              <div className="feature-description">
-                Well I have a youtube channel as well i do youtube from time to
-                time, you can call me a youtuber
+              {/* item 3 */}
+              <div className="feature-item">
+                <div className="feature-icon">
+                  <i>
+                    <IoLogoYoutube />
+                  </i>
+                </div>
+                <div className="feature-title">Youtube</div>
+                <div className="feature-description">
+                  Well I have a youtube channel as well i do youtube from time
+                  to time, (youtuber)
+                </div>
               </div>
             </div>
           </div>

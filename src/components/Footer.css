@@ -1,7 +1,7 @@
 footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgb(16, 21, 34);
+  background-color: var(--bg-dark2);
   position: absolute;
   width: 100%;
   flex-direction: column;
