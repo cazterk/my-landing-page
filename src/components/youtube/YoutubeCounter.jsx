@@ -7,11 +7,13 @@ import { IoLogoYoutube } from "react-icons/io";
 import { MdRemoveRedEye } from "react-icons/md";
 import { BsPeopleFill } from "react-icons/bs";
 import { TiVideo } from "react-icons/ti";
+import CountUp from "react-countup";
+import { number } from "prop-types";
 
 function YoutubeCounter() {
-  const [subscriberCount, setSubscriberCount] = useState();
-  const [viewCount, setviewrCount] = useState();
-  const [videoCount, setvideoCount] = useState();
+  const [subscriberCount, setSubscriberCount] = useState(true);
+  const [viewCount, setviewrCount] = useState(true);
+  const [videoCount, setvideoCount] = useState(true);
 
   useEffect(() => {
     const { api_key, channel_id } = config;
@@ -19,15 +21,12 @@ function YoutubeCounter() {
     fetch(apiCall)
       .then((result) => result.json())
       .then((data) => {
-        const subCount = numeral(
-          data.items[0].statistics.subscriberCount
-        ).format("0,0");
-        const viewCount = numeral(data.items[0].statistics.viewCount).format(
-          "0,0"
-        );
-        const videoCount = numeral(data.items[0].statistics.videoCount).format(
-          "0,0"
-        );
+        const subCount = parseInt(data.items[0].statistics.subscriberCount);
+
+        const viewCount = parseInt(data.items[0].statistics.viewCount);
+
+        const videoCount = parseInt(data.items[0].statistics.videoCount);
+
         setSubscriberCount(subCount);
         setviewrCount(viewCount);
         setvideoCount(videoCount);
@@ -54,15 +53,21 @@ function YoutubeCounter() {
                     <i>
                       <BsPeopleFill />
                     </i>
-                    <div className="live-title"> {subscriberCount}</div>
+                    <div className="live-title">
+                      {" "}
+                      <CountUp
+                        end={subscriberCount}
+                        duration={20}
+                        separator=","
+                      />
+                    </div>
                   </div>
                   <div>
                     <i>
                       <MdRemoveRedEye />
                     </i>
                     <div className="live-title">
-                      {" "}
-                      <Fragment>{viewCount}</Fragment>
+                      <CountUp end={viewCount} duration={20} separator="," />
                     </div>
                   </div>
                   <div>
@@ -71,7 +76,7 @@ function YoutubeCounter() {
                     </i>
                     <div className="live-title">
                       {" "}
-                      <Fragment>{videoCount}</Fragment>
+                      <CountUp end={videoCount} duration={20} separator="," />
                     </div>
                   </div>
                 </div>

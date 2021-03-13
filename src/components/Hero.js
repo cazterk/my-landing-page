@@ -14,7 +14,7 @@ function Hero() {
     <>
       <IconContext.Provider value={{ size: 40 }}>
         <section className="hero" id="hero">
-          <div class="content">
+          <div className="content">
             <div className="hero-content">
               <h1 className="title pop-in">
                 <Typewriter
