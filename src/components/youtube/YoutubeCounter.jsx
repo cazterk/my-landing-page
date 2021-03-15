@@ -1,14 +1,13 @@
 import React, { useState, useEffect, Fragment } from "react";
 import config from "./config";
 import numeral from "numeral";
-import "./LiveStats.css";
+import "../../assets/css/LiveStats.css";
 import { IconContext } from "react-icons/lib";
 import { IoLogoYoutube } from "react-icons/io";
 import { MdRemoveRedEye } from "react-icons/md";
 import { BsPeopleFill } from "react-icons/bs";
 import { TiVideo } from "react-icons/ti";
 import CountUp from "react-countup";
-import { number } from "prop-types";
 
 function YoutubeCounter() {
   const [subscriberCount, setSubscriberCount] = useState(true);
@@ -37,16 +36,18 @@ function YoutubeCounter() {
     <>
       <div className="stats">
         <div className="stats-section container container-all">
-          <IconContext.Provider value={{ size: 40, color: "#e62117" }}>
-            <div className="live-stats ">
-              {/* item 1 */}
+          <div className="live-stats ">
+            {/* item 1 */}
+            <IconContext.Provider value={{ size: 40 }}>
               <div className="item-desc">
                 {" "}
-                <i>
+                <i id="yt-icon">
                   <IoLogoYoutube />
                 </i>
                 <h2>Live Stats</h2>
               </div>
+            </IconContext.Provider>
+            <IconContext.Provider value={{ size: 30, color: "#e62117" }}>
               <div className="live-item">
                 <div className="live-icon">
                   <div>
@@ -81,8 +82,8 @@ function YoutubeCounter() {
                   </div>
                 </div>
               </div>
-            </div>
-          </IconContext.Provider>
+            </IconContext.Provider>
+          </div>
         </div>
       </div>
     </>

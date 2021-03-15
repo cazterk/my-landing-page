@@ -1,4 +1,4 @@
-@import "../Global.css";
+@import "./Global.css";
 .stats {
   background-color: var(--bg-dark);
 }
@@ -24,10 +24,11 @@
   padding: 0.9375rem;
   flex: 0 0 50%;
   flex: 1;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
   margin-bottom: 20px;
   text-align: center;
   color: var(--mid-gray);
+  border-radius: 6px;
 }
 
 .live-item:hover {
@@ -57,6 +58,10 @@
   line-height: 1.5rem;
 }
 
+#yt-icon {
+  color: var(--first-color);
+  size: 40;
+}
 /* #youtube {
   color: #e62117;
   align-items: center;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Footer.css";
+import "../assets/css/Footer.css";
 import { AiFillFacebook, AiFillTwitterSquare } from "react-icons/ai";
 import { FaInstagramSquare } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";

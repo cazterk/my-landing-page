@@ -1,5 +1,5 @@
 import React from "react";
-import "./Features.css";
+import "../assets/css/Features.css";
 import { IoLogoYoutube } from "react-icons/io";
 import { SiUnity } from "react-icons/si";
 import { ImHtmlFive } from "react-icons/im";
@@ -8,7 +8,7 @@ import { IconContext } from "react-icons/lib";
 function Features() {
   return (
     <>
-      <IconContext.Provider value={{ size: 50, color: "#ff304f" }}>
+      <IconContext.Provider value={{ size: 40, color: "#ff304f" }}>
         <div className="feature-section">
           <div className="features container container-all" id="features">
             <div className="feature-intro">
@@ -18,7 +18,7 @@ function Features() {
 
             <div className="feature-grid">
               {/* item 1 */}
-              <div className="feature-item">
+              <div className="feature-item left-item">
                 <div className="feature-icon">
                   <i>
                     <SiUnity />
@@ -31,7 +31,7 @@ function Features() {
                 </div>
               </div>
               {/* item 2 */}
-              <div className="feature-item">
+              <div className="feature-item center-item">
                 <div className="feature-icon">
                   <i>
                     <ImHtmlFive />
@@ -44,7 +44,7 @@ function Features() {
                 </div>
               </div>
               {/* item 3 */}
-              <div className="feature-item">
+              <div className="feature-item right-item">
                 <div className="feature-icon">
                   <i>
                     <IoLogoYoutube />

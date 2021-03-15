@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hero.css";
+import "../assets/css/Hero.css";
 import { AiOutlineGithub } from "react-icons/ai";
 import { IoGameControllerSharp } from "react-icons/io5";
 import { FaYoutube } from "react-icons/fa";
@@ -27,6 +27,7 @@ function Hero() {
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
+
                       .typeString(
                         " This is my site developed using react, feel free to look around, checkout some goodies and my projects"
                       )
