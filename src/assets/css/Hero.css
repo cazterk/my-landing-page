@@ -35,6 +35,7 @@
   margin: 0 auto;
   line-height: 1.5;
   animation-delay: 0.8s;
+  font-weight: bold
 }
 
 .hero-content .action {
