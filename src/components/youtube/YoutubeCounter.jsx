@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Fragment } from "react";
 import config from "./config";
-import numeral from "numeral";
 import "../../assets/css/LiveStats.css";
 import { IconContext } from "react-icons/lib";
 import { IoLogoYoutube } from "react-icons/io";

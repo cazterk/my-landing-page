@@ -16,7 +16,7 @@
 .item-desc {
   align-items: center;
   text-align: center;
-  color: var(--mid-gray);
+  color: var(--white);
   width: 100%;
 }
 
@@ -38,6 +38,7 @@
 .live-intro {
   margin-bottom: 1.875rem;
   text-align: center;
+ 
 }
 
 .live-icon {
@@ -50,11 +51,13 @@
   font-weight: bold;
   line-height: 1.15;
    margin-bottom: 1.5rem;
+ 
 }
 
 .live-description {
   font-size: 0.875rem;
   line-height: 1.5rem;
+  
 }
 
 #yt-icon {

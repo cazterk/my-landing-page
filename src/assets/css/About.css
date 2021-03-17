@@ -1,18 +1,29 @@
 @import "./Global.css";
-
-.about {
+.about-section{
   background-color: var(--bg-dark3);
-  height: 35.75076608784474vh;
+}
+.about {
+
+  /* height: 45.75076608784474vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .about-header {
   position: relative;
+}
+
+.about-title{
+  margin-bottom: 1.875rem;
+  text-align: center;
+  color: var(--white);
+  width: 100%;
+ 
 }
 
 .about-profile img {
@@ -34,12 +45,10 @@
 }
 
 .about-item {
-  margin-right: 20px;
   text-align: center;
   padding: 0.9375rem;
   color: var(--mid-gray);
-  position: absolute;
-  width: 50%;
+  width: 75%;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
   border-radius: 6px;
 }
@@ -57,18 +66,21 @@
 
 @media screen and (max-width: 900px) {
   .about-item {
-    margin-left: 20px;
-    width: 80%;
+    /* margin-left: 20px; */
+    /* width: 80%; */
     flex: 0 0 50%;
     flex: 1;
   }
   .about {
-    height: 50vh;
+    /* height: 50vh; */
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .about {
-    height: 75vh;
+    /* height: 75vh; */
   }
+  /* .about-item {
+    margin-top: 4em;
+  } */
 }

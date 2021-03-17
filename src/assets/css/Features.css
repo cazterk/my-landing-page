@@ -46,7 +46,7 @@
   font-size: 0.875rem;
   line-height: 1.5rem;
 }
-
+/* 
 .left-item {
   z-index: 1;
 }
@@ -57,7 +57,7 @@
 
 .right-item {
   z-index: 3;
-}
+} */
 
 @media screen and (min-device-width: 900px) {
   .feature-grid {
