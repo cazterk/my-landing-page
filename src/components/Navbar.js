@@ -5,6 +5,11 @@ import "../assets/css/Navbar.css";
 
 function Navbar() {
   const [menuActive, setMenuActive] = useState(false);
+  if (menuActive && "open") {
+    document.body.style.overflow = "hidden";
+  } else if (!menuActive) {
+    document.body.style.overflow = "scroll";
+  }
 
   return (
     <>
