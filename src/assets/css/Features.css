@@ -15,7 +15,8 @@
   margin-bottom: 20px;
   text-align: center;
   color: var(--mid-gray);
-  border-radius: 6px;
+  background-color: var(--bg-dark2);
+  border-radius: 12px;
   grid-row: 1/2;
   font-weight: bold;
 }
