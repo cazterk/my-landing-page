@@ -54,17 +54,11 @@
 }
 
 .btn--large:hover,
-.bt--medium:hover,
+.btn--medium:hover,
 .btn--mobile:hover {
   transition: all 0.3s ease-in-out;
-  background: #fff;
+  background: #f00946;
   color: #242424;
-}
-
-.btn--wide:hover {
-  color: #fff;
-  background-color: #f00946;
-  transition: all 0.2s ease-in-out;
 }
 
 .btn-link {

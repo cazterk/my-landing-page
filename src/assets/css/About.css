@@ -1,9 +1,8 @@
 @import "./Global.css";
-.about-section{
+.about-section {
   background-color: var(--bg-dark3);
 }
 .about {
-
   /* height: 45.75076608784474vh; */
   display: flex;
   justify-content: center;
@@ -11,19 +10,17 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .about-header {
   position: relative;
 }
 
-.about-title{
+.about-title {
   margin-bottom: 1.875rem;
   text-align: center;
   color: var(--white);
   width: 100%;
- 
 }
 
 .about-profile img {
@@ -31,6 +28,7 @@
   height: 96px;
   border-radius: 1000px;
   position: absolute;
+  background-color: var(--white);
   left: 50%;
   transform: translate(-50%, -50%);
   border: 6px solid var(--first-color);
@@ -47,7 +45,8 @@
 .about-item {
   text-align: center;
   padding: 0.9375rem;
-  color: var(--mid-gray);
+  color: var(--bg-dark);
+  background-color: var(--white);
   width: 75%;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
   border-radius: 6px;

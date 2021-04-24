@@ -17,11 +17,7 @@ function Hero() {
           <div className="content">
             <div className="hero-content">
               <h1 className="title pop-in">
-                <Typewriter
-                  onInit={(typewriter) => {
-                    typewriter.typeString("Hello! cazterk here").start();
-                  }}
-                />
+                cazterk <span id="title-colored"> here</span> :)
               </h1>
               <p className="desc pop-in">
                 <Typewriter
@@ -29,7 +25,7 @@ function Hero() {
                     typewriter
 
                       .typeString(
-                        " This is my site developed using react, feel free to look around, checkout some goodies and my projects"
+                        "Your all in one place to find out what cazterk is up to "
                       )
                       .start();
                   }}
@@ -68,7 +64,7 @@ function Hero() {
               <div className="action pop-in">
                 <Scroll to="features" smooth={true} duration={1000}>
                   <Link>
-                    <Button buttonSize="btn--wide" buttonColor="blue">
+                    <Button buttonSize="btn--medium" buttonColor="blue">
                       get started
                     </Button>
                   </Link>

@@ -14,7 +14,7 @@ function Footer() {
 
   return (
     <>
-      <IconContext.Provider value={{ size: 30, color: "#212f3c" }}>
+      <IconContext.Provider value={{ size: 30, color: "#c7c9d3" }}>
         <footer>
           <div className="footer-section">
             <Scroll Scroll to="navbar" smooth={true} duration={1000}>

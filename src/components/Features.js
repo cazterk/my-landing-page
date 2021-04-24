@@ -8,7 +8,7 @@ import { IconContext } from "react-icons/lib";
 function Features() {
   return (
     <>
-      <IconContext.Provider value={{ size: 40, color: "#ff304f" }}>
+      <IconContext.Provider value={{ size: 50 }}>
         <div className="feature-section">
           <div className="features container container-all" id="features">
             <div className="feature-intro">
@@ -20,7 +20,7 @@ function Features() {
               {/* item 1 */}
               <div className="feature-item left-item">
                 <div className="feature-icon">
-                  <i>
+                  <i id="unity">
                     <SiUnity />
                   </i>
                 </div>
@@ -33,7 +33,7 @@ function Features() {
               {/* item 2 */}
               <div className="feature-item center-item">
                 <div className="feature-icon">
-                  <i>
+                  <i id="html">
                     <ImHtmlFive />
                   </i>
                 </div>
@@ -46,7 +46,7 @@ function Features() {
               {/* item 3 */}
               <div className="feature-item right-item">
                 <div className="feature-icon">
-                  <i>
+                  <i id="youtube-feature">
                     <IoLogoYoutube />
                   </i>
                 </div>

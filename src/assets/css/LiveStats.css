@@ -1,6 +1,6 @@
 @import "./Global.css";
 .stats {
-  background-color: var(--bg-dark2);
+  background-color: #e62117;
 }
 .stats-section {
   justify-content: center;
@@ -27,7 +27,7 @@
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
   margin-bottom: 20px;
   text-align: center;
-  color: var(--mid-gray);
+  color: var(--white);
   border-radius: 6px;
 }
 
@@ -38,7 +38,6 @@
 .live-intro {
   margin-bottom: 1.875rem;
   text-align: center;
- 
 }
 
 .live-icon {
@@ -50,18 +49,16 @@
 .live-title {
   font-weight: bold;
   line-height: 1.15;
-   margin-bottom: 1.5rem;
- 
+  margin-bottom: 1.5rem;
 }
 
 .live-description {
   font-size: 0.875rem;
   line-height: 1.5rem;
-  
 }
 
 #yt-icon {
-  color: var(--first-color);
+  color: var(--white);
   size: 40;
 }
 /* #youtube {

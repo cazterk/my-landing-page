@@ -10,7 +10,9 @@
   --bg-dark3: #15171a;
   --mid-gray: #c7c9d3;
 }
-
+.html {
+  background-color: var(--white);
+}
 .container-all {
   padding-top: 4.375rem;
   padding-right: 1.5rem;

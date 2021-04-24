@@ -46,7 +46,7 @@ function YoutubeCounter() {
                 <h2>Live Stats</h2>
               </div>
             </IconContext.Provider>
-            <IconContext.Provider value={{ size: 30, color: "#e62117" }}>
+            <IconContext.Provider value={{ size: 30, color: "#fff" }}>
               <div className="live-item">
                 <div className="live-icon">
                   <div>
