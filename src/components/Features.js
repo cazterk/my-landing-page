@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/Features.css";
 import { IoLogoYoutube } from "react-icons/io";
 import { SiUnity } from "react-icons/si";
-import { ImHtmlFive } from "react-icons/im";
+import { FaCode } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
 function Features() {
@@ -26,21 +26,21 @@ function Features() {
                 </div>
                 <div className="feature-title"> Game dev</div>
                 <div className="feature-description">
-                  I like making games when ever I can, using unity and have a
-                  lot to learn in order to be pro{" "}
+                  I like making games, using unity, I'm always learning from the
+                  internet and established people in the industry{" "}
                 </div>
               </div>
               {/* item 2 */}
               <div className="feature-item center-item">
                 <div className="feature-icon">
                   <i id="html">
-                    <ImHtmlFive />
+                    <FaCode />
                   </i>
                 </div>
                 <div className="feature-title"> Web dev</div>
                 <div className="feature-description">
-                  This I like as well, reactjs and the like, and this site was
-                  made by me with the help of the internet
+                  I'm a reactjs developer, I like good ui design, I do backend
+                  as well with node and dotnet
                 </div>
               </div>
               {/* item 3 */}
@@ -52,8 +52,8 @@ function Features() {
                 </div>
                 <div className="feature-title">Youtube</div>
                 <div className="feature-description">
-                  Well I have a youtube channel as well i do youtube from time
-                  to time, (youtuber)
+                  Tech focused channel, programming tips and other random cool
+                  stuff, feel free to subscribe its free
                 </div>
               </div>
             </div>

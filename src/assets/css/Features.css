@@ -19,10 +19,15 @@
   border-radius: 12px;
   grid-row: 1/2;
   font-weight: bold;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .feature-item:hover {
-  transition: all 200ms ease-in;
+  transition: all 200ms ease-in-out;
   transform: scale(1.05);
   z-index: 4;
 }
@@ -37,6 +42,7 @@
   justify-content: center;
 }
 .feature-title {
+  color: var(--first-color);
   font-weight: 700;
   line-height: 1.15;
   font-size: 1.25rem;

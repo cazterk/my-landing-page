@@ -25,7 +25,7 @@ function Hero() {
                     typewriter
 
                       .typeString(
-                        "Your all in one place to find out what cazterk is up to "
+                        "Your all in one place to find out what cazterk is up to"
                       )
                       .start();
                   }}

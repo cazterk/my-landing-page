@@ -50,10 +50,15 @@
   width: 75%;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
   border-radius: 6px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .about-item:hover {
-  transition: all 200ms ease-in;
+  transition: all 200ms ease-in-out;
   transform: scale(1.05);
 }
 
