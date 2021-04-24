@@ -2,7 +2,7 @@
 
 .hero {
   background-color: var(--bg-dark2);
-  height: 70vh;
+  height: 50vh;
   background-position: center;
   position: relative;
   display: flex;
