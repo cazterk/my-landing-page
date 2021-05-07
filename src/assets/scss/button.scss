@@ -1,6 +1,4 @@
-:root {
-  --primary: #fff;
-}
+@import "./global.scss";
 
 .btn {
   padding: 8px 20px;
@@ -12,16 +10,16 @@
 }
 
 .btn--primary {
-  background-color: var(--primary);
+  background-color: $white;
   color: #242424;
-  border: 1px solid var (var(--primary));
+  border: 1px solid $white;
 }
 
 .btn--outline {
   background-color: transparent;
-  color: #fff;
+  color: $white;
   padding: 8px 20px;
-  border: 1px solid var(--primary);
+  border: 1px solid $white;
   transition: all 0.3s ease-in-out;
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/css/Hero.css";
+import "../assets/scss/hero.scss";
 import { AiOutlineGithub } from "react-icons/ai";
 import { IoGameControllerSharp } from "react-icons/io5";
 import { FaYoutube } from "react-icons/fa";
