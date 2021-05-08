@@ -47,7 +47,7 @@ $bar-spacing: 8px;
 
     .hamburger-menu {
       position: relative;
-      transform: translateY($bar-spacing);
+      // transform: translateY($bar-spacing);
       background: rgba(255, 255, 255, 1);
       transition: all 0ms 300ms;
 
