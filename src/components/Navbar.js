@@ -21,7 +21,10 @@ function Navbar() {
           </Link>
 
           <div className="navbar__bars">
-            <div class="hamburger-menu"></div>
+            <div
+              onClick={() => setMenuActive(!menuActive)}
+              className={`hamburger-menu ${menuActive && "animate"}`}
+            ></div>
           </div>
           <div className="navbar__menu">
             <Link className="navbar__menu--links">Projects</Link>
