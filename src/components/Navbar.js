@@ -23,7 +23,7 @@ function Navbar() {
           <div className="navbar__bars">
             <div
               onClick={() => setMenuActive(!menuActive)}
-              className={`hamburger-menu ${menuActive && "animate"}`}
+              className={`hamburger__menu ${menuActive && "animate"}`}
             ></div>
           </div>
           <div className="navbar__menu">
