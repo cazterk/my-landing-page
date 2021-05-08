@@ -1,9 +1,9 @@
 @import "global";
 @import "media-queries";
 
-$bar-width: 40px;
-$bar-height: 5px;
-$bar-spacing: 11px;
+$bar-width: 30px;
+$bar-height: 3.3px;
+$bar-spacing: 8px;
 
 %align-center {
   display: flex;
@@ -12,7 +12,7 @@ $bar-spacing: 11px;
 
 .navbar {
   background-color: $bg-dark2;
-  height: 80px;
+  height: 6vh;
   display: flex;
   justify-content: space-around;
   padding: 0.5rem calc(100vw - 1200px) / 2;
@@ -30,17 +30,13 @@ $bar-spacing: 11px;
   }
 
   &__bars {
+    // display: flex;
     opacity: 0;
-    //animated hamburger
     top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
-    width: $bar-width;
-    height: $bar-height + $bar-spacing * 2;
-    font-size: 2em;
+    @extend %align-center;
 
-    align-items: left;
+    //animated hamburger
 
     .hamburger-menu,
     .hamburger-menu:after,
@@ -98,8 +94,8 @@ $bar-spacing: 11px;
       color: $white;
       opacity: 1;
       position: relative;
-      top: 22px;
-      right: 20px;
+      // top: 22px;
+      // right: 20px;
       font-size: 2rem;
     }
   }
