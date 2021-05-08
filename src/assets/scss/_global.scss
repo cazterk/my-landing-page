@@ -9,6 +9,13 @@ $bg-dark2: #131417;
 $bg-dark3: #15171a;
 $mid-gray: #c7c9d3;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
 .html {
   background-color: $white;
 }

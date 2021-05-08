@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link as Scroll } from "react-scroll";
 import { Link } from "react-router-dom";
+import { TiThMenu } from "react-icons/ti";
 import "../assets/scss/navbar.scss";
 
 function Navbar() {
@@ -13,7 +14,25 @@ function Navbar() {
 
   return (
     <>
-      <div className="nav-section" id="navbar">
+      <div>
+        <nav className="navbar">
+          <Link to="/" className="navbar_logo">
+            cazterk
+          </Link>
+
+          <div className="navbar_bars">
+            <i>
+              <TiThMenu />
+            </i>
+          </div>
+          <div className="navbar_menu">
+            <Link>Projects</Link>
+            <Link>About</Link>
+          </div>
+        </nav>
+      </div>
+
+      {/* <div className="nav-section" id="navbar">
         <nav className="nav">
           <div>
             <Link to="/" className="navbar-logo">
@@ -53,7 +72,7 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-      </div>
+      </div> */}
     </>
   );
 }
