@@ -1,6 +1,10 @@
 @import "global";
 @import "media-queries";
 
+$bar-width: 40px;
+$bar-height: 5px;
+$bar-spacing: 11px;
+
 %align-center {
   display: flex;
   align-items: center;
@@ -15,7 +19,7 @@
   z-index: 10;
   position: relative;
 
-  &_logo {
+  &__logo {
     color: $white;
     cursor: pointer;
     text-decoration: none;
@@ -25,20 +29,82 @@
     @extend %align-center;
   }
 
-  &_bars {
+  &__bars {
     opacity: 0;
+    //animated hamburger
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: $bar-width;
+    height: $bar-height + $bar-spacing * 2;
+    font-size: 2em;
+
+    align-items: left;
+
+    .hamburger-menu,
+    .hamburger-menu:after,
+    .hamburger-menu:before {
+      width: $bar-width;
+      height: $bar-height;
+    }
+
+    .hamburger-menu {
+      position: relative;
+      transform: translateY($bar-spacing);
+      background: rgba(255, 255, 255, 1);
+      transition: all 0ms 300ms;
+
+      &.animate {
+        background: rgba(255, 255, 255, 0);
+      }
+    }
+
+    .hamburger-menu:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: $bar-spacing;
+      background: rgba(255, 255, 255, 1);
+      transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .hamburger-menu:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: $bar-spacing;
+      background: rgba(255, 255, 255, 1);
+      transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .hamburger-menu.animate:after {
+      top: 0;
+      transform: rotate(45deg);
+      transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .hamburger-menu.animate:before {
+      bottom: 0;
+      transform: rotate(-45deg);
+      transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
 
     @include tablet {
       color: $white;
       opacity: 1;
-      position: absolute;
+      position: relative;
       top: 22px;
       right: 20px;
       font-size: 2rem;
     }
   }
 
-  &_menu {
+  &__menu {
     @extend %align-center;
     list-style: none;
     text-align: center;
@@ -46,6 +112,39 @@
 
     @include tablet {
       display: none;
+    }
+    &--links {
+      color: $white;
+      @extend %align-center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 5px;
+        opacity: 0;
+        left: 0;
+        right: 0;
+        bottom: -29px;
+        background: $first-color;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+      &:hover {
+        color: $first-color;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+    &__toggle {
     }
   }
 }

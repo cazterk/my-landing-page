@@ -16,18 +16,16 @@ function Navbar() {
     <>
       <div>
         <nav className="navbar">
-          <Link to="/" className="navbar_logo">
+          <Link to="/" className="navbar__logo">
             cazterk
           </Link>
 
-          <div className="navbar_bars">
-            <i>
-              <TiThMenu />
-            </i>
+          <div className="navbar__bars">
+            <div class="hamburger-menu"></div>
           </div>
-          <div className="navbar_menu">
-            <Link>Projects</Link>
-            <Link>About</Link>
+          <div className="navbar__menu">
+            <Link className="navbar__menu--links">Projects</Link>
+            <Link className="navbar__menu--links">About</Link>
           </div>
         </nav>
       </div>
