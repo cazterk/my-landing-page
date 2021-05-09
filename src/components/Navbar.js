@@ -6,7 +6,7 @@ import "../assets/scss/navbar.scss";
 
 function Navbar() {
   const [menuActive, setMenuActive] = useState(false);
-  if (menuActive && "open") {
+  if (menuActive) {
     document.body.style.overflow = "hidden";
   } else if (!menuActive) {
     document.body.style.overflow = "scroll";
@@ -26,7 +26,7 @@ function Navbar() {
               className={`hamburger__menu ${menuActive && "animate"}`}
             ></div>
           </div>
-          <div className="navbar__menu">
+          <div className={`navbar__menu ${menuActive && "animate"}`}>
             <Link className="navbar__menu--links">Projects</Link>
             <Link className="navbar__menu--links">About</Link>
           </div>
