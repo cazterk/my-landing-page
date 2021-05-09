@@ -27,8 +27,23 @@ function Navbar() {
             ></div>
           </div>
           <div className={`navbar__menu ${menuActive && "animate"}`}>
-            <Link className="navbar__menu--links">Projects</Link>
-            <Link className="navbar__menu--links">About</Link>
+            <Scroll
+              to="features"
+              smooth={true}
+              duration={1000}
+              onClick={() => setMenuActive(!menuActive)}
+            >
+              <Link className="navbar__menu--links">Projects</Link>
+            </Scroll>
+
+            <Scroll
+              to="about"
+              smooth={true}
+              duration={1000}
+              onClick={() => setMenuActive(!menuActive)}
+            >
+              <Link className="navbar__menu--links">About</Link>
+            </Scroll>
           </div>
         </nav>
       </div>
