@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment } from "react";
 import config from "./config";
-import "../../assets/css/LiveStats.css";
+import "../../assets/scss/liveStats.scss";
 import { IconContext } from "react-icons/lib";
 import { IoLogoYoutube } from "react-icons/io";
 import { MdRemoveRedEye } from "react-icons/md";

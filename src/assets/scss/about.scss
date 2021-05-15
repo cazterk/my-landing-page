@@ -1,0 +1,79 @@
+@import "global";
+
+.about-section {
+  background-color: $bg-dark3;
+
+  .about {
+    /* height: 45.75076608784474vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    .about-title {
+      margin-bottom: 1.875rem;
+      text-align: center;
+      color: $white;
+      width: 100%;
+    }
+
+    .about-item {
+      text-align: center;
+      padding: 0.9375rem;
+      color: $bg-dark;
+      background-color: $white;
+      width: 75%;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+      border-radius: 6px;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+
+      .about-header {
+        position: relative;
+      }
+
+      .about-profile img {
+        width: 96px;
+        height: 96px;
+        border-radius: 1000px;
+        position: absolute;
+        background-color: $white;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 6px solid $first-color;
+      }
+
+      .card .card-body {
+        padding: 18px 48px;
+      }
+
+      .desc {
+        margin: 0 10px 0 10px;
+      }
+
+      .about-description {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        font-weight: bold;
+      }
+    }
+
+    .about-item:hover {
+      transition: all 200ms ease-in-out;
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-item {
+    flex: 0 0 50%;
+    flex: 1;
+  }
+}

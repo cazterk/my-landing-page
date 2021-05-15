@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/css/Features.css";
+import "../assets/scss/features.scss";
 import { IoLogoYoutube } from "react-icons/io";
 import { SiUnity } from "react-icons/si";
 import { FaCode } from "react-icons/fa";

@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Link as Scroll } from "react-scroll";
 import { Link } from "react-router-dom";
-import "../assets/css/Navbar.css";
+import { TiThMenu } from "react-icons/ti";
+import "../assets/scss/navbar.scss";
 
 function Navbar() {
   const [menuActive, setMenuActive] = useState(false);
-  if (menuActive && "open") {
+  if (menuActive) {
     document.body.style.overflow = "hidden";
   } else if (!menuActive) {
     document.body.style.overflow = "scroll";
@@ -13,7 +14,41 @@ function Navbar() {
 
   return (
     <>
-      <div className="nav-section" id="navbar">
+      <div>
+        <nav className="navbar">
+          <Link to="/" className="navbar__logo">
+            cazterk
+          </Link>
+
+          <div className="navbar__bars">
+            <div
+              onClick={() => setMenuActive(!menuActive)}
+              className={`hamburger__menu ${menuActive && "animate"}`}
+            ></div>
+          </div>
+          <div className={`navbar__menu ${menuActive && "animate"}`}>
+            <Scroll
+              to="features"
+              smooth={true}
+              duration={1000}
+              onClick={() => setMenuActive(!menuActive)}
+            >
+              <Link className="navbar__menu--links">Projects</Link>
+            </Scroll>
+
+            <Scroll
+              to="about"
+              smooth={true}
+              duration={1000}
+              onClick={() => setMenuActive(!menuActive)}
+            >
+              <Link className="navbar__menu--links">About</Link>
+            </Scroll>
+          </div>
+        </nav>
+      </div>
+
+      {/* <div className="nav-section" id="navbar">
         <nav className="nav">
           <div>
             <Link to="/" className="navbar-logo">
@@ -53,7 +88,7 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-      </div>
+      </div> */}
     </>
   );
 }
