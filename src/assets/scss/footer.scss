@@ -45,7 +45,7 @@ footer {
 @media screen and (max-width: 900px) {
   .footer-section {
     flex-direction: column;
-    width: 100%;
+    width: 100% !important;
 
     .footer-logo {
       margin-bottom: 1rem;
@@ -56,6 +56,7 @@ footer {
     }
 
     #social {
+      margin-top: 1rem !important;
       margin-bottom: 1rem !important;
     }
   }
