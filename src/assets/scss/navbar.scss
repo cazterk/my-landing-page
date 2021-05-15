@@ -113,11 +113,6 @@ $bar-spacing: 8px;
     text-align: center;
     margin-right: 0.5rem;
 
-    clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(100px at 90% -20%);
-    transition: all 1s ease-out;
-    pointer-events: none;
-
     @include tablet {
       display: none;
     }
