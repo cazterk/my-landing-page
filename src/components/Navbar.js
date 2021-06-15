@@ -44,6 +44,15 @@ function Navbar() {
             >
               <Link className="navbar__menu--links">About</Link>
             </Scroll>
+
+            <Link
+              className="navbar__menu--links"
+              to={"//www.terklog.com/"}
+              target="_blank"
+              aria-label="Terklog"
+            >
+              Blog
+            </Link>
           </div>
         </nav>
       </div>
