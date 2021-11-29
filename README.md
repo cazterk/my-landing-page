@@ -1,6 +1,4 @@
 
-This is my landing page created using react link to the finished site will be available once complete
-
 <br/>
 <p align="center">
   <h3 align="center">Landing Page</h3>
@@ -12,11 +10,11 @@ This is my landing page created using react link to the finished site will be av
   </p>
 </p>
 
-# site-link
+## site-link
 
 http://cazterk.netlify.app/
 
-# more-links
+## more-links
 
 https://solo.to/cazterk
 
