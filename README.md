@@ -7,6 +7,7 @@
     This is a simple Reactjs app generated using create Reat app 
     <br/>
     <br/>
+      <a href="https://cazterk.netlify.app/">Live Site</a>
   </p>
 </p>
 
