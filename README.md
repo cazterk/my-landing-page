@@ -69,7 +69,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Authors
 
-* [cazterk](https://github.com/cazterk) - *Built this site* - Dedicated to God • web dev • indie game dev • tech-guy  - 
+* [cazterk](https://github.com/cazterk) - *Built this site* - 
 
 ## Acknowledgements
 
