@@ -69,7 +69,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Authors
 
-* **Cephas Zulu** - *Dedicated to God • web dev • indie game dev • tech-guy * - [Cephas Zulu](https://github.com/cazterk) - *Built this site*
+* **Cephas Zulu** - Dedicated to God • web dev • indie game dev • tech-guy  - [Cephas Zulu](https://github.com/cazterk) - *Built this site*
 
 ## Acknowledgements
 
