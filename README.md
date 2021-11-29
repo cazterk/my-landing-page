@@ -11,14 +11,6 @@
   </p>
 </p>
 
-## site-link
-
-http://cazterk.netlify.app/
-
-## more-links
-
-https://solo.to/cazterk
-
 ## Built With
 
 - Reactjs
